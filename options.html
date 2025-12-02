@@ -1,0 +1,30 @@
+<!-- options.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Email Domain Tagger Options</title>
+  <style>
+    body { padding: 20px; font-family: Arial, sans-serif; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; }
+    input[type="email"] { width: 300px; padding: 5px; }
+    button { padding: 8px 15px; background: #0060df; color: white; border: none; cursor: pointer; }
+    .status { margin-top: 10px; }
+    .error { color: red; }
+    .success { color: green; }
+  </style>
+</head>
+<body>
+  <h1>Email Domain Tagger Settings</h1>
+  <div class="form-group">
+    <label for="baseEmail">Base Email (will be formatted as username+tag@domain):</label>
+    <input type="email" id="baseEmail" placeholder="email@gmail.com" required>
+    <small>Email is required and must be valid</small>
+  </div>
+  <button id="save">Save</button>
+  <div id="status" class="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
